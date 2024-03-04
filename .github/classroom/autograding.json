@@ -1,24 +1,44 @@
 {
   "tests": [
     {
-      "name": "program running on normal input and arguments",
-      "setup": "",
+      "name": "program running on normal input and arguments 1",
+      "setup": "make all",
       "run": "make test ARG=1",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 1,
-      "points": 50
+      "points": 25
     },
     {
-      "name": "program treatment on wrong arguments",
+      "name": "program running on normal input and arguments 2",
       "setup": "",
       "run": "make test ARG=2",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 1,
-      "points": 50
+      "points": 25
+    },
+    {
+      "name": "program running on normal input and arguments 3",
+      "setup": "",
+      "run": "make test ARG=3",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Missed argument test",
+      "setup": "",
+      "run": "make test ARG=4",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
     }
   ]
 }
